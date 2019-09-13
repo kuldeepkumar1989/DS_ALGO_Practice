@@ -2,6 +2,18 @@ package com.kuldeep.tree;
 
 public class PostorderTraversal {
 	private Node root;
+	
+	class Node {
+		int value;
+		Node left;
+		Node right;
+
+		Node(int value) {
+			this.value = value;
+			this.left = null;
+			this.right = null;
+		}
+	}
 
 	public static void main(String[] args) {
 		PostorderTraversal postorderTraversal = new PostorderTraversal();

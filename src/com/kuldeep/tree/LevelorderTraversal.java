@@ -3,9 +3,22 @@ package com.kuldeep.tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
+
 public class LevelorderTraversal {
 	
 	private Node root;
+	
+	class Node {
+		int value;
+		Node left;
+		Node right;
+
+		Node(int value) {
+			this.value = value;
+			this.left = null;
+			this.right = null;
+		}
+	}
 
 	public static void main(String[] args) {
 		LevelorderTraversal levelorderTraversal = new LevelorderTraversal();
